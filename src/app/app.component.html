@@ -1,4 +1,5 @@
 <nav>
     <div (click)="openList()">Open list</div>
+    <div (click)="newDevice()">+</div>
 </nav>
-<app-device></app-device>
+<app-device [gridView]="gridView"></app-device>
