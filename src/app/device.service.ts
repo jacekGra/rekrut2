@@ -1,0 +1,35 @@
+import { Injectable } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { device } from './device/device';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DeviceService {
+
+  private url="http://localhost:3000/devices"
+  
+  
+  
+  constructor(private http: HttpClient) { }
+
+
+
+
+  getOneDevice(id: number): Observable<any>{
+    return this.http.get(this.url+'/'+id);
+  }
+
+  updateOneDevice(dev: device): Observable<any>{
+    if(dev.hasOwnProperty('id'))
+      return this.http.put(this.url+'/'+dev.id, dev);
+    else
+      return this.http.post(this.url+'/',dev);
+  }
+
+
+
+
+}

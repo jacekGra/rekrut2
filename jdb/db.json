@@ -1,0 +1,146 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "ipAddress": "218.214.146.85",
+      "ipAddressv6": "492e:6114:1bc5:6a89:e470:a577:17db:6e72",
+      "country": "AL",
+      "password": "85901e4f8062195aea21ba227b62bcba83e4d0de",
+      "version": "0.27"
+    },
+    {
+      "id": 2,
+      "ipAddress": "116.57.68.146",
+      "ipAddressv6": "964b:725a:f42f:ab4e:d642:32e2:d59e:fc6c",
+      "country": "CN",
+      "password": "d5941ef7f0fa35eb86dbef7b687715db68b36225",
+      "version": "0.8.0"
+    },
+    {
+      "id": 3,
+      "ipAddress": "131.53.66.195",
+      "ipAddressv6": "7dc5:fa13:5d33:7ac9:a3db:c4af:44f3:ebf",
+      "country": "SA",
+      "password": "a005fa00b7e2be9b386e032fb73bcfa87449822b",
+      "version": "0.95"
+    },
+    {
+      "id": 4,
+      "ipAddress": "80.36.76.101",
+      "ipAddressv6": "8a0a:752:3c55:7bac:f29e:7d01:fed2:3e10",
+      "country": "TH",
+      "password": "018f402054132590809ce61a6cc2ac9f61623266",
+      "version": "3.55"
+    },
+    {
+      "id": 5,
+      "ipAddress": "254.170.98.32",
+      "ipAddressv6": "d1ed:c81:6a53:3bfb:5b73:5847:b9be:8a99",
+      "country": "US",
+      "password": "cad2188c73791da6a8ed93a3374c3b3eda018861",
+      "version": "1.1.7"
+    },
+    {
+      "id": 6,
+      "ipAddress": "41.93.93.188",
+      "ipAddressv6": "1c7e:6452:aac7:8ef2:ea99:308f:9d9b:7a90",
+      "country": "PL",
+      "password": "40af3a3fcfb53b2a6e3b8b80bb8905c40544d837",
+      "version": "0.88"
+    },
+    {
+      "id": 7,
+      "ipAddress": "29.115.71.41",
+      "ipAddressv6": "8b4f:fc79:a9e5:894:ce5a:34d:8bfe:7c74",
+      "country": "SZ",
+      "password": "6d251375e7434fb664c53a776eb0eb9596111004",
+      "version": "0.8.0"
+    },
+    {
+      "id": 8,
+      "ipAddress": "116.253.254.221",
+      "ipAddressv6": "6355:39b8:2565:46ac:1333:bd6:3ad4:188e",
+      "country": "CN",
+      "password": "fc19ee553a09c38eded0b1ded818c3d732e30e62",
+      "version": "7.75"
+    },
+    {
+      "id": 9,
+      "ipAddress": "61.233.159.117",
+      "ipAddressv6": "9390:f6f7:4136:35e0:ef06:9a5a:6499:b169",
+      "country": "UA",
+      "password": "f8f3d35c0b036f805b6e3a0e324e4973c9d1f34d",
+      "version": "2.8"
+    },
+    {
+      "id": 10,
+      "ipAddress": "80.55.36.106",
+      "ipAddressv6": "6a43:f425:723c:2b96:7be8:7066:7060:8869",
+      "country": "IR",
+      "password": "99b9ef1b6d1b1dbc862a70660fa399ffba4ac428",
+      "version": "4.7.6"
+    },
+    {
+      "id": 11,
+      "ipAddress": "169.217.166.70",
+      "ipAddressv6": "c497:67a8:3d93:629d:52cd:78fa:f971:25a",
+      "country": "VN",
+      "password": "ab73b7e494e8c9f0216951d4d1bf74fd1c27c596",
+      "version": "0.4.3"
+    },
+    {
+      "id": 12,
+      "ipAddress": "77.239.183.20",
+      "ipAddressv6": "2cdf:19ad:1eba:b562:bf:394c:cc36:29df",
+      "country": "PE",
+      "password": "e71a2b9490e54dd98a3910585847a9263a7386ec",
+      "version": "4.19"
+    },
+    {
+      "id": 13,
+      "ipAddress": "243.157.99.222",
+      "ipAddressv6": "9ae1:d9a6:9ee6:5a12:b74b:c110:a120:b19d",
+      "country": "RU",
+      "password": "2bc5bf9cca99dcdf769f85e4aba22cbed4c34223",
+      "version": "0.1.3"
+    },
+    {
+      "id": 14,
+      "ipAddress": "36.113.13.16",
+      "ipAddressv6": "9b38:ff33:4a2c:d55a:6640:bf44:9bd:1bf1",
+      "country": "PS",
+      "password": "07dee25d0f0e255256f0181b70e1736673431f46",
+      "version": "3.02"
+    },
+    {
+      "id": 15,
+      "ipAddress": "53.35.16.127",
+      "ipAddressv6": "6b38:4557:1b67:90d6:bcc6:e1ff:a21d:284d",
+      "country": "RU",
+      "password": "feac20321c3577dd6a001d50abd9a5f3a725a67c",
+      "version": "0.99"
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "ipAddress": "218.214.146.85",
+      "ipAddressv6": "492e:6114:1bc5:6a89:e470:a577:17db:6e72",
+      "country": "AL",
+      "password": "85901e4f8062195aea21ba227b62bcba83e4d0de",
+      "version": "0.28",
+      "id": 18
+    },
+    {
+      "ipAddress": "243.157.99.6",
+      "ipAddressv6": "",
+      "country": "",
+      "password": "",
+      "version": "0.3.4.5",
+      "id": 19
+    }
+  ]
+}
