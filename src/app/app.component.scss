@@ -1,0 +1,46 @@
+$plusSize: 50px;
+nav {
+    background: rgb(58, 78, 102);
+    position: relative;
+    .menu-open{
+        display: inline-block;
+        font-size: 20px;
+        line-height: 34px;
+        margin-left: 10px;
+        color: white;
+        border-left: 3px solid rgb(79, 119, 145);
+        border-right:  3px solid rgb(79, 119, 145);
+        padding: 0 10px;
+        cursor: pointer;
+        transition: background .3s ease-in-out;
+        &:hover{
+            background: rgb(79, 119, 145);
+        }
+    }
+
+    .menu-plus{
+        font-size: calc( #{$plusSize} * .7 );
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        background: orange;
+        width: $plusSize;
+        height: $plusSize;
+        //border: 2px solid blue;
+        border-radius: 50%;
+        line-height: $plusSize;
+        text-align: center;
+        font-weight: 900;
+        color: white;
+        transition: background .6s ease-in-out;
+        cursor: pointer;
+        z-index: 100;
+        &:hover {
+            background: orangered;
+        }
+    }
+}
+app-device{
+    position: relative;
+}

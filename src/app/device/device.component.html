@@ -7,7 +7,15 @@
 
 <div *ngIf="gridView && dataLoaded">
     <table>
-        <thead></thead>
+        <thead>
+            <th>id</th>
+            <th>IP Address</th>
+            <th>IP Address v6</th>
+            <th>Country</th>
+            <th>Password Hash</th>
+            <th>Version</th>
+            <th>Actions</th>
+        </thead>
         <tbody>
             <tr *ngFor="let device of deviceList">
                 <td>{{device.id}}</td>
@@ -29,22 +37,34 @@
 
 
 
-<div *ngIf="!gridView">
+<div *ngIf="!gridView" class="form-frame">
     <div *ngIf="dataLoaded">
         <form #f="ngForm" (ngSubmit)="submitForm(f.value)">
-            <div [class.id-notempty]="dev.id">
-                <input name="id" [(ngModel)]="dev.id"                #n001="ngModel" readonly="readonly" pattern="{{dev.id}}">
+            <div [class.id-empty]="!dev.id">
+                <input name="id" [(ngModel)]="dev.id"                #n001="ngModel" readonly="readonly" pattern="{{dev.id}}" placeholder="id">
                 <div class="info" *ngIf="n001.invalid">Something went wrong!</div>
             </div>
-            <input name="ipAddress" [(ngModel)]="dev.ipAddress"      #n002="ngModel" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$" required>
-            <div class="info" *ngIf="n002.invalid">Wrong IP address format</div>
-            <input name="ipAddressv6" [(ngModel)]="dev.ipAddressv6"  #n003="ngModel" pattern="^(([0-9a-fA-F]{1}|[1-9a-fA-F]{1}[0-9a-fA-F]{1,3}):){7}([0-9a-fA-F]{1}|[1-9a-fA-F]{1}[0-9a-fA-F]{1,3})$">
-            <div class="info" *ngIf="n003.invalid">Wrong IPv6 address format</div>
-            <input name="country" [(ngModel)]="dev.country"          #n004="ngModel" pattern="[A-Za-z]{2}" minlength="2">
-            <div class="info" *ngIf="n004.invalid">Wrong country code.</div>
-            <input name="password" [(ngModel)]="dev.password"        #n005="ngModel">
-            <input name="version" [(ngModel)]="dev.version"          #n006="ngModel">
-            <button type="submit" *ngIf="!(n001.invalid || n002.invalid || n003.invalid || n004.invalid || n005.invalid || n006.invalid)">Send</button>
+            <div>
+                <input name="ipAddress" [(ngModel)]="dev.ipAddress"      #n002="ngModel" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$"  placeholder="IP Address" required>
+                <div class="info" *ngIf="n002.invalid">Wrong IP address format (eg. 192.168.1.1). This only field is required.</div>
+            </div>
+            <div>
+                <input name="ipAddressv6" [(ngModel)]="dev.ipAddressv6"  #n003="ngModel" pattern="^(([0-9a-fA-F]{1}|[1-9a-fA-F]{1}[0-9a-fA-F]{1,3}):){7}([0-9a-fA-F]{1}|[1-9a-fA-F]{1}[0-9a-fA-F]{1,3})$" placeholder="IP Address v6">
+                <div class="info" *ngIf="n003.invalid">Wrong IPv6 address format (eg. 8a0a:752:3c55:7bac:f29e:7d01:fed2:3e10)</div>
+            </div>
+            <div>
+                <input name="country" [(ngModel)]="dev.country"          #n004="ngModel" pattern="[A-Za-z]{2}" minlength="2"  placeholder="Country Code ">
+                <div class="info" *ngIf="n004.invalid">Wrong country code. (Format XX, eg. UA)</div>
+            </div>
+            <div>
+                <input name="password" [(ngModel)]="dev.password"        #n005="ngModel" placeholder="Password shadow string">
+            </div>
+            <div>
+                <input name="version" [(ngModel)]="dev.version"          #n006="ngModel" placeholder="Version">
+            </div>
+            <div>
+                <button class="button" type="submit" *ngIf="!(n001.invalid || n002.invalid || n003.invalid || n004.invalid || n005.invalid || n006.invalid)">Send</button>
+            </div>
         </form>
     </div>
 </div>
